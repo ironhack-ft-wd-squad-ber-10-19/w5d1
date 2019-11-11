@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POST Form</title>
+</head>
+
+<body>
+    {{!-- <h2>GET</h2>
+    <form action="/" method="get">
+        <input type="text" name="foo">
+        <button type="submit">send</button>
+    </form> --}}
+
+    {{!-- when submitted, this form performs a POST request on the `/users` route --}}
+    <form action="/users" method="post">
+
+        <label>Username: </label>
+        <input type="text" name="username">
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password">
+
+        <button type="submit">create</button>
+    </form>
+</body>
+
+</html>
